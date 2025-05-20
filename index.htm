@@ -1,0 +1,513 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="utf-8" />
+    <link
+      rel="shortcut icon"
+      type="image/png"
+      href="assets/media/senyer-circle-all.png"
+    />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <link rel="stylesheet" type="text/css" href="css/media.css" />
+    <script
+      type="text/javascript"
+      src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"
+    ></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>@senyer7</title>
+    <meta
+      name="keywords"
+      content="senyer7, арсений ступников, разработчик сайтов, battlepass, лицензия, русский"
+    />
+    <meta
+      name="description"
+      content="Senyer7 - разработчик сайтов, front-end и backend разработчик"
+    />
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Senyer7" />
+    <meta property="og:locale" content="ru_RU" />
+    <meta
+      property="og:image"
+      content="https://jc-world.su/assets/funs/economy.png"
+    />
+    <meta property="og:image:width" content="968" />
+    <meta property="og:image:height" content="504" />
+    <script>
+      document.addEventListener("contextmenu", function (e) {
+        e.preventDefault();
+      }); // проверить элемент и все такое
+
+      document.addEventListener("selectstart", function (e) {
+        e.preventDefault();
+      }); // выделить или скопировать текст
+      //      document.addEventListener("keydown", function (e) {
+      //        if (e.key === "F12") {
+      //          e.preventDefault();
+      //        }
+      //      }); // запрет на F12
+    </script>
+  </head>
+  <body>
+    <!-- Page -->
+    <main class="main">
+      <canvas id="snowCanvas"></canvas>
+      <!-- WINTEER YEEAH -->
+      <script src="script.js"></script>
+      <!-- Side Content -->
+      <aside class="side_bar" id="side_bar">
+        <div class="side_bar__content">
+          <a href="" target="_self" class="side_bar__logo">AS</a>
+          <ul class="side_bar__menu" id="menu">
+            <li>
+              <a href="#ex1" class="menu_link"> Про сайт </a>
+            </li>
+            <li>
+              <a href="#ex2"> Библиотека </a>
+            </li>
+            <li>
+              <a href="#ex3"> FAQ </a>
+            </li>
+            <li>
+              <a href="#ex4"> Поддержка </a>
+            </li>
+            <li>
+              <a href="#ex6"> Обработка данных </a>
+            </li>
+            <li></li>
+          </ul>
+          <div class="side_bar__socials">
+            <a target="_blank" href="https://t.me/senyer7">
+              <img
+                class="social-icon"
+                src="./assets/svg-icons/telegram-icon.svg"
+                alt="Telegram"
+              />
+            </a>
+            <a target="_blank" href="https://vk.com/arsenii_coder">
+              <img
+                class="social-icon-1"
+                src="./assets/svg-icons/contacts-vk-fill.svg"
+                alt="VK"
+              />
+            </a>
+          </div>
+        </div>
+      </aside>
+      <aside class="side_bar__menu_hamburger">
+        <div class="side_bar__menu_hamburger_icon">
+          <label for="check">
+            <input type="checkbox" class="check" name="menu" id="check" />
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+      </aside>
+      <!-- Main Content -->
+      <div class="main_section">
+        <!-- Header -->
+        <header class="header panel">
+          <div class="container">
+            <nav class="header__menu">
+              <a href="" target="_self" class="header__logo">Senyer7</a>
+              <div class="header__server">
+                <div class="header__server_ip_content">
+                  <p
+                    class="header__server_ip"
+                    id="server_ip"
+                    style="margin: 0 5px"
+                  >
+                    https://t.me/senyer7web
+                  </p>
+                </div>
+                <span class="header_server_ip_line"></span>
+                <div class="header__server_ip_copy_alert">
+                  Ссылка скопирована
+                </div>
+              </div>
+            </nav>
+          </div>
+        </header>
+
+        <!--Offer-->
+        <section class="offer" id="offer">
+          <div class="container">
+            <div class="offer__content">
+              <div class="offer__content_text">
+                <h1 class="offer__title">Войди в сеть, уже пора!</h1>
+              </div>
+              <a href="#ex1" class="offer__content_arrow">
+                <img src="./assets/svg-icons/arrow.svg" alt="Стрелка" />
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <!-- About -->
+        <section class="about" id="ex1">
+          <div class="container">
+            <div class="about__content">
+              <div class="about__content_title reveal">
+                <h2 class="main_title">О сайте senyer7</h2>
+                <p class="main_title_number">01</p>
+              </div>
+              <div class="about__content_server reveal">
+                <p class="about__content_desc">
+                  senyer7 — проект для тех, кто ценит качественную
+                  веб-разработку. Создаю удобные и привлекательные платформы.
+                  Активно улучшаю сайт: внедряю новые функции, учитываю отзывы
+                  пользователей.
+                </p>
+                <div class="about__content_jaycob" id="parallax_scene">
+                  <img
+                    src="./assets/absolute.png"
+                    class="about__content_jaycob_art"
+                    alt=""
+                    data-depth="0.7"
+                  />
+                  <span class="about__content_jaycob_rectangle"></span>
+                </div>
+              </div>
+            </div>
+            <div class="bottom_alert" id="bottom_alert">
+              <p>Ваши отзывы и поддержка помогают развивать наш проект!</p>
+              <a class="bottom_alert_button" id="bottom_alert_button"
+                >оки-доки</a
+              >
+            </div>
+          </div>
+        </section>
+
+        <!-- Funs -->
+        <section class="funs" id="ex2">
+          <div class="container">
+            <div class="funs__content">
+              <div class="funs__content_title reveal">
+                <h2 class="main_title">Библиотека / Работы</h2>
+                <p class="main_title_number">02</p>
+              </div>
+              <div class="funs__content_list">
+                <div
+                  class="funs__content_list_item survival reveal"
+                  id="survival_modal_button"
+                  onclick="window.open('sites/russia', '_blank')"
+                >
+                  <h3 class="funs__content_list_item_title">russia</h3>
+                </div>
+                <div
+                  class="funs__content_list_item economy reveal"
+                  id="economy_modal_button"
+                  onclick="window.open('sites/teg-main', '_blank')"
+                >
+                  <h3 class="funs__content_list_item_title">teg-main</h3>
+                </div>
+                <div
+                  class="funs__content_list_item dungeons reveal"
+                  id="dungeons_modal_button"
+                  onclick="window.open('sites/mesto', '_blank')"
+                >
+                  <h3 class="funs__content_list_item_title">mesto</h3>
+                </div>
+                <div
+                  class="funs__content_list_item battlepass reveal"
+                  id="events_modal_button"
+                  onclick="window.open('sites/okno', '_blank')"
+                >
+                  <h3 class="funs__content_list_item_title">okno</h3>
+                </div>
+              </div>
+              <div
+                class="funs__content_overlay"
+                id="modal_window"
+                style="display: none"
+              >
+                <div class="funs__content_overlay_info">
+                  <span class="close_modal">
+                    <img
+                      src="./assets/svg-icons/cross.svg"
+                      alt=""
+                      class="funs__content_overlay_info_close"
+                    />
+                  </span>
+                  <div class="funs__content_overlay_info_box">
+                    <h2 class="funs__content_overlay_info_title"></h2>
+                    <p class="funs__content_overlay_info_desc"></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- FAQ -->
+        <section class="faq" id="ex3">
+          <div class="container">
+            <div class="faq__content">
+              <div class="faq__content_title reveal">
+                <h2 class="main_title">FAQ</h2>
+                <p class="main_title_number">03</p>
+              </div>
+              <div class="faq__content_list reveal">
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span>Почему ты начал делать сайты?</span>
+                  </h2>
+                  <div class="faq__content_answer block">
+                    Создание сайтов – это уникальный процесс, в котором вы
+                    управляете внешним видом своей страницы.
+                  </div>
+                </div>
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span>Кто такой @senyer7?</span>
+                  </h2>
+                  <div class="faq__content_answer block">
+                    @senyer7 — псевдоним Ступникова Арсения, который возник
+                    внезапно. В один летний вечер, думая о никнейме, я выбрал
+                    senyer7, добавив личное число 7, так как senyer уже был
+                    занят. Забавная история, не правда ли?
+                  </div>
+                </div>
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span
+                      >Можно ли с тобой пообщаться в мессенджере или по
+                      звонку?</span
+                    >
+                  </h2>
+                  <div class="faq__content_answer block">
+                    Да, вы определенно можете! Также я ценю своих сырников в
+                    телеграм-канале.
+                    <a
+                      class="text_link"
+                      target="_blank"
+                      href="https://t.me/senyer7web"
+                      >senyer7web</a
+                    >
+                  </div>
+                </div>
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span>Легко создавать сайты?</span>
+                  </h2>
+                  <div class="faq__content_answer block">
+                    Да, создавать сайты легко! С помощью конструкторов и
+                    шаблонов можно быстро создать нужный ресурс. <br />
+                    Но, я всё таки, создаю сайты сам, через код, это очень
+                    интересно и бесплатно. Не нужно никаких вложений, кроме
+                    хостинга сайта.
+                  </div>
+                </div>
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span>Возьмёшь меня в админку Телеграмм-канала?</span>
+                  </h2>
+                  <div class="faq__content_answer block">
+                    Да, я могу взять, но нам необходимо лучше узнать друг
+                    друга.<br />
+                    Можно связаться со мной в Телеграм:
+                    <a
+                      class="text_link"
+                      target="_blank"
+                      href="https://t.me/senyer7"
+                      >senyer7</a
+                    >.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Donate -->
+        <section class="donate" id="ex4">
+          <div class="container">
+            <div class="donate__content">
+              <div class="donate__content_title reveal">
+                <h2 class="main_title">Поддержка сырнику</h2>
+                <p class="main_title_number">04</p>
+              </div>
+              <div class="donate__content_purchase reveal">
+                <div class="donate__content_purchase_form">
+                  <script src="js/trademcapi.js"></script>
+                  <div id="trademc-buyform"></div>
+                  <script>
+                    TrademcAPI.GetBuyForm({
+                      Shop: "223781",
+                      Title: "",
+                      Nickname: "Ваше имя",
+                      Item: "Выбрать товар",
+                      Coupon: "Промокод (если есть)",
+                      Button: "Купить сырнеке",
+                      Success_URL: "https://trademc.org",
+                      Pending_URL: "https://trademc.org",
+                      Fail_URL: "https://trademc.org",
+                      PastPlaceID: "trademc-buyform",
+                    });
+                  </script>
+                </div>
+                <div class="donate__content_purchase_info">
+                  <div class="donate__content_purchase_info_problems">
+                    <h3 class="donate__content_purchase_info_title">
+                      Возникли проблемы?
+                    </h3>
+                    <p class="donate__content_purchase_info_desc">
+                      Обращайтесь к нашему сообществу или непосредственно к
+                      <a
+                        class="text_link"
+                        target="_blank"
+                        href="https://t.me/senyer7"
+                        >разработчику</a
+                      >
+                      сайта
+                    </p>
+                  </div>
+                  <div class="donate__content_purchase_info_donate">
+                    <h3 class="donate__content_purchase_info_title">
+                      Выдача сырников
+                    </h3>
+                    <p class="donate__content_purchase_info_desc">
+                      Сырник выдается в течение нескольких секунд/минут после
+                      оплаты кодеру.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <!-- rules -->
+        <section class="faq" id="ex6">
+          <div class="container">
+            <div class="faq__content">
+              <div class="faq__content_title reveal">
+                <h2 class="main_title">Обработка данных</h2>
+                <p class="main_title_number">06</p>
+              </div>
+              <div class="faq__content_list reveal">
+                <div class="faq__content_question_spoiler close">
+                  <h2 class="faq__content_question">
+                    <span>1. Согласие на обработку данных</span>
+                  </h2>
+                  <div class="faq__content_answer block">
+                    1.1. При регистрации на сервере вы даете согласие на
+                    обработку ваших персональных данных, включая, но не
+                    ограничиваясь, игровым тегом, адресом электронной почты и
+                    идентификацией в соцсетях.<br />
+                    1.2. Администрация сервера обязуется защищать ваши данные и
+                    использовать их только в соответствии с целями, связанными с
+                    функционированием сервера.<br />
+                    1.3. Вы имеете право в любой момент отозвать свое согласие
+                    на обработку данных, связавшись с администрацией сервера.<br />
+                    1.4. Администрация не несет ответственности за утечку
+                    данных, произошедшую в результате действий третьих лиц или
+                    при отсутствии вашей ответственности за сохранность личных
+                    данных.<br />
+                    1.5. Мы оставляем за собой право использовать данные для
+                    статистического анализа и улучшения качества сервиса.<br />
+                    1.6. В случае необходимости, администраторы могут передавать
+                    ваши данные третьим лицам только в рамках
+                    законодательства.<br />
+                    2.1. Все материалы, размещенные на данном сайте, являются
+                    собственностью Ступникова Арсения Сергеевича.<br />
+                    2.2. Копирование, распространение или любое другое
+                    использование контента без явного согласия владельца
+                    запрещено.<br />
+                    2.3. За нарушение авторских прав предусмотрена
+                    ответственность в соответствии с действующим
+                    законодательством.<br />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- Contacts -->
+        <!-- <section class="contacs" id="ex6">
+      <div class="container">
+        <div class="about__content">
+          <div class="contacts__content_title reveal">
+            <h2 class="main_title">В РАЗРАБОТКЕ (МАПА СЕРВЕРА)</h2>
+            <p class="main_title_number">06</p>
+          </div>
+
+    </section> -->
+
+        <!-- Footer -->
+        <footer class="footer">
+          <div class="container">
+            <div class="footer__content">
+              <div class="footer__content_info">
+                <p class="footer__content_info_copyright">
+                  © Все права защищены. 2024
+                </p>
+                <a
+                  class="footer__content_info_agreement text_link"
+                  id="agreement_modal_button"
+                  >Лицензионное соглашение</a
+                >
+              </div>
+              <a href="" target="_self" class="footer__logo">Senyer7</a>
+            </div>
+          </div>
+        </footer>
+      </div>
+    </main>
+
+    <!-- Yandex.Metrika counter -->
+    <script type="text/javascript">
+      (function (m, e, t, r, i, k, a) {
+        m[i] =
+          m[i] ||
+          function () {
+            (m[i].a = m[i].a || []).push(arguments);
+          };
+        m[i].l = 1 * new Date();
+        for (var j = 0; j < document.scripts.length; j++) {
+          if (document.scripts[j].src === r) {
+            return;
+          }
+        }
+        (k = e.createElement(t)),
+          (a = e.getElementsByTagName(t)[0]),
+          (k.async = 1),
+          (k.src = r),
+          a.parentNode.insertBefore(k, a);
+      })(
+        window,
+        document,
+        "script",
+        "https://mc.yandex.ru/metrika/tag.js",
+        "ym"
+      );
+
+      ym(99267021, "init", {
+        clickmap: true,
+        trackLinks: true,
+        accurateTrackBounce: true,
+        webvisor: true,
+      });
+    </script>
+    <noscript
+      ><div>
+        <img
+          src="https://mc.yandex.ru/watch/99267021"
+          style="position: absolute; left: -9999px"
+          alt=""
+        /></div
+    ></noscript>
+    <!-- /Yandex.Metrika counter -->
+
+    <!-- Scripts -->
+    <script src="js/parallax.js" type="text/javascript"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/smoothscroll/1.4.10/SmoothScroll.min.js"
+      integrity="sha256-huW7yWl7tNfP7lGk46XE+Sp0nCotjzYodhVKlwaNeco="
+      crossorigin="anonymous"
+    ></script>
+    <script src="jquery.js"></script>
+    <script src="jquery-3.4.1.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
